@@ -1,0 +1,14 @@
+<header>
+    <nav style="background-color: rgb(15, 228, 72);" class="navbar navbar-expand-md">
+       
+
+        <ul class="navbar-nav">
+            <a *ngIf="hardcodedAuthentication.isUserLoggedin()" routerLink="/welcome/:name" class="nav-link">Home</a>&nbsp;
+            <a *ngIf="hardcodedAuthentication.isUserLoggedin()" routerLink="/todo" class="nav-link">Todos</a>&nbsp;
+            <a  *ngIf="hardcodedAuthentication.isUserLoggedin()" style='float:right;'routerLink="logout" class="nav-link">Logout</a>
+            <a *ngIf="!hardcodedAuthentication.isUserLoggedin()" style='float:centert;' routerLink="/login" class="nav-link">Login</a><br>
+         
+        </ul>
+        
+    </nav>
+</header>
